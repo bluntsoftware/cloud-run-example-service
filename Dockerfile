@@ -1,4 +1,4 @@
-FROM maven:3-jdk-11
+FROM openjdk:11.0.10-jdk-slim-buster
 ADD . /build
 WORKDIR /build
 RUN mvn clean install -DskipTests
